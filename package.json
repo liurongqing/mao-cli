@@ -1,0 +1,21 @@
+{
+  "name": "mao-cli",
+  "version": "1.0.0",
+  "description": "create template",
+  "main": "index.js",
+  "bin": {
+    "mao-cli": "./bin/mao-cli.js"
+  },
+  "repository": "git@github.com:liurongqing/mao-cli.git",
+  "author": "liurongqing <phpgege@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "download-git-repo": "^1.0.2",
+    "glob": "^7.1.2",
+    "inquirer": "^6.0.0",
+    "log-symbols": "^2.2.0",
+    "ora": "^2.1.0"
+  }
+}

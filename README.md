@@ -5,7 +5,7 @@ node v10.4.0
 
 ## 安装
 ```bash
-yarn global add mao-cli # npm i -g mao-cli
+npm i -g mao-cli # yarn global add mao-cli
 ```
 
 ## 下载模版

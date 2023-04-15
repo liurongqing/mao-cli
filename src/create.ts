@@ -8,7 +8,7 @@ import { loadRemoteAsset } from "./lib/download";
 
 export type templateType = "typescript" | "console" | "html5" | "custom";
 
-export const create = async (str: any, options: any) => {
+export const create = async (projectName: string) => {
   inquirer
     .prompt([
       {
@@ -41,7 +41,6 @@ export const create = async (str: any, options: any) => {
       },
     ])
     .then(({ template }: { template: templateType }) => {
-      // console.log("template", template);
       if (template === "custom") {
         // 输入地址
         inquirer
@@ -54,11 +53,11 @@ export const create = async (str: any, options: any) => {
             },
           ])
           .then(({ path }: { path: string }) => {
-            loadRemoteAsset("custom", path);
+            loadRemoteAsset(projectName, "custom", path);
           });
       } else {
         // 下载
-        loadRemoteAsset(template);
+        loadRemoteAsset(projectName, template);
       }
     });
 };

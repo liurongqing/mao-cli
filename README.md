@@ -54,14 +54,25 @@
     # app 项目   app
     ```
 
-## inquirer
-inquirer 使用 ^8.0.0
-```bash
-npm i -D inquirer@8
-```
+## 依赖
+1. inquirer 使用 ^8
+    ```bash
+    npm i inquirer@8
+    ```
+2. ora 使用 ^5
+    ```bash
+    npm i ora@5
+    ```
+3. chalk 使用 ^4
+    ```bash
+    npm i chalk@4
+    ```
 
 ## 优化
 不管是模板还是自定义，默认http下载，失败了则再重新进行git clone 下载
 
 ## 参考
 [下载仓库 download-git-repo](https://gitlab.com/flippidippi/download-git-repo)
+
+ora 加图标， chalk 改颜色
+ora 图标选择 https://github.com/sindresorhus/cli-spinners/blob/main/spinners.json

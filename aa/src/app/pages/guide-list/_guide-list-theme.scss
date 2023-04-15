@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+
+@mixin guide-list-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $is-dark-theme: map-get($theme, is-dark);
+
+  .docs-guide-list .docs-guide-item {
+    color: mat-color($primary, if($is-dark-theme, 200, default));
+  }
+
+  .docs-guide-card-divider {
+    background: mat-color($accent);
+  }
+
+  .docs-guide-card:hover {
+    background: mat-color($background, hover);
+  }
+
+  .docs-guide-item:focus {
+    .docs-guide-card {
+      background: mat-color($background, focused-button);
+    }
+    outline: none;
+  }
+}

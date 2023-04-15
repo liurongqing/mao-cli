@@ -19,7 +19,7 @@ exports.create = void 0;
 // import inquirer = require("inquirer");
 const inquirer_1 = __importDefault(require("inquirer"));
 const download_1 = require("./lib/download");
-const create = (str, options) => __awaiter(void 0, void 0, void 0, function* () {
+const create = (projectName) => __awaiter(void 0, void 0, void 0, function* () {
     inquirer_1.default
         .prompt([
         {
@@ -52,7 +52,6 @@ const create = (str, options) => __awaiter(void 0, void 0, void 0, function* () 
         },
     ])
         .then(({ template }) => {
-        // console.log("template", template);
         if (template === "custom") {
             // 输入地址
             inquirer_1.default
@@ -65,12 +64,12 @@ const create = (str, options) => __awaiter(void 0, void 0, void 0, function* () 
                 },
             ])
                 .then(({ path }) => {
-                (0, download_1.loadRemoteAsset)("custom", path);
+                (0, download_1.loadRemoteAsset)(projectName, "custom", path);
             });
         }
         else {
             // 下载
-            (0, download_1.loadRemoteAsset)(template);
+            (0, download_1.loadRemoteAsset)(projectName, template);
         }
     });
 });

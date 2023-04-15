@@ -11,10 +11,10 @@ console.log(figlet.textSync("Mao Cli Manager"));
 
 program
   .version("2.0.0")
-  .description("Here are some templates for managing projects")
-  .option("-l, --ls [value]", "List directory contens")
-  .option("-m, --mkdir <value>", "Create a directory")
-  .option("-t, --touch <value>", "Create a file");
+  .description("Here are some templates for managing projects");
+// .option("-l, --ls [value]", "List directory contens")
+// .option("-m, --mkdir <value>", "Create a directory")
+// .option("-t, --touch <value>", "Create a file");
 
 program
   .command("create")

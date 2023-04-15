@@ -1,0 +1,37 @@
+{
+  "name": "@angular/components-examples",
+  "version": "11.0.0-next.0-sha-4ef3d3f10",
+  "description": "Angular Components Examples",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/components.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/components/issues"
+  },
+  "homepage": "https://github.com/angular/components#readme",
+  "peerDependencies": {
+    "@angular/cdk": "11.0.0-next.0-sha-4ef3d3f10",
+    "@angular/cdk-experimental": "11.0.0-next.0-sha-4ef3d3f10",
+    "@angular/core": "^10.0.0 || ^11.0.0-0",
+    "@angular/common": "^10.0.0 || ^11.0.0-0",
+    "@angular/material": "11.0.0-next.0-sha-4ef3d3f10",
+    "@angular/material-experimental": "11.0.0-next.0-sha-4ef3d3f10",
+    "@angular/material-moment-adapter": "11.0.0-next.0-sha-4ef3d3f10"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "fesm2015": "./fesm2015/components-examples.js",
+  "typings": "./index.d.ts",
+  "module": "./fesm2015/components-examples.js",
+  "es2015": "./fesm2015/components-examples.js"
+}

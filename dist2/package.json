@@ -1,0 +1,23 @@
+{
+  "name": "pure-function",
+  "version": "1.0.0",
+  "description": "常用函数集合",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn --watch src ./src/math/vec2.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liurongqing/pure-function.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liurongqing/pure-function/issues"
+  },
+  "homepage": "https://github.com/liurongqing/pure-function#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}

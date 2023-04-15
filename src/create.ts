@@ -6,7 +6,8 @@ import inquirer from "inquirer";
 
 import { loadRemoteAsset } from "./lib/download";
 
-type templateType = "typescript" | "console" | "html5" | "custom";
+export type templateType = "typescript" | "console" | "html5" | "custom";
+
 export const create = async (str: any, options: any) => {
   inquirer
     .prompt([
@@ -43,9 +44,21 @@ export const create = async (str: any, options: any) => {
       // console.log("template", template);
       if (template === "custom") {
         // 输入地址
+        inquirer
+          .prompt([
+            {
+              name: "path",
+              type: "input",
+              message: "请输入地址",
+              default: "owner/name",
+            },
+          ])
+          .then(({ path }: { path: string }) => {
+            loadRemoteAsset("custom", path);
+          });
       } else {
         // 下载
+        loadRemoteAsset(template);
       }
     });
-  // console.log("list", list);
 };

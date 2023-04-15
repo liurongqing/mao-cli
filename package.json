@@ -1,21 +1,34 @@
 {
   "name": "mao-cli",
-  "version": "1.0.1",
-  "description": "create template",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "bin": {
-    "mao-cli": "./bin/mao-cli.js"
+  "scripts": {
+    "build": "npx tsc --watch"
   },
-  "repository": "git@github.com:liurongqing/mao-cli.git",
-  "author": "liurongqing <phpgege@163.com>",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liurongqing/mao-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liurongqing/mao-cli/issues"
+  },
+  "homepage": "https://github.com/liurongqing/mao-cli#readme",
+  "devDependencies": {
+    "@types/figlet": "^1.5.5",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "typescript": "^5.0.4"
+  },
   "dependencies": {
-    "chalk": "^2.4.1",
-    "commander": "^2.15.1",
-    "download-git-repo": "^1.0.2",
-    "glob": "^7.1.2",
-    "inquirer": "^6.0.0",
-    "log-symbols": "^2.2.0",
-    "ora": "^2.1.0"
+    "commander": "^10.0.1",
+    "figlet": "^1.6.0"
   }
 }

@@ -1,24 +1,30 @@
-# mao-cli
-通过工具生成各种各种模版，如：phaser 3 基本配置模版、react 基本配置模版
+## 快速搭建项目
 
-node v10.4.0
+重写中...
 
-## 安装
-```bash
-npm i -g mao-cli # yarn global add mao-cli
-```
 
-## 下载模版
-```bash
-# 当前支持的模版只有 react 与 phaser
-mao-cli create 项目名 # 回车选择模版名称
-```
+### 命令
+1. 快速配置 eslint 规则
+    <small>该规则使用了，typescript+eslint+prettier, 做了以下2个操作</small>
+    1. 生成 `.eslintrc.cjs` 配置
+    2. 安装依赖到 package.json 中
+    ```bash
+    mao g eslintrc # mao generate eslintrc
+    ```
 
-## 自定义
-默认为不自定义，若要自定义 github 库路径
-1. 创建项目的时候选择 y 自定义
-2. 然后输入 github 库地址， 如：username/project-name
+2. 快速生成 typescript+eslint+prettier npm 安装包字符串
+    ```bash
+    mao npm eslint
+    ```
 
-## 快速生成 react 或 phaser 模版
-创建项目时回车，默认不自定义，然后进去创建 react 或 phaser 操作
+3. 快速生成项目
+
+    ```bash
+    mao new dirname # 下一步选择模块
+
+    # ts 项目    typescript  学习ts使用
+    # 中后台项目  console 集成 ant.design之类的UI库
+    # h5 项目    html5 
+    # app 项目   app
+    ```
 

@@ -2,7 +2,10 @@
   "name": "mao-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "bin": {
+    "mao": "./dist/index.js"
+  },
   "scripts": {
     "build": "npx tsc --watch"
   },
@@ -19,16 +22,19 @@
   "homepage": "https://github.com/liurongqing/mao-cli#readme",
   "devDependencies": {
     "@types/figlet": "^1.5.5",
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "inquirer": "^8.2.5",
     "typescript": "^5.0.4"
   },
   "dependencies": {
     "commander": "^10.0.1",
+    "download-git-repo": "^3.0.2",
     "figlet": "^1.6.0"
   }
 }

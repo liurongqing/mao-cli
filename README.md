@@ -28,3 +28,8 @@
     # app 项目   app
     ```
 
+## inquirer
+inquirer 使用 ^8.0.0
+```bash
+npm i -D inquirer@8
+```

@@ -13,10 +13,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.create = void 0;
-// import inquirer from "inquirer";
-// const inquirer = require("inquirer");
-// const inquirer = import("inquirer");
-// import inquirer = require("inquirer");
 const inquirer_1 = __importDefault(require("inquirer"));
 const download_1 = require("./lib/download");
 const create = (projectName) => __awaiter(void 0, void 0, void 0, function* () {

@@ -6,7 +6,7 @@ exports.templates = {
         key: "typescript",
         name: "typescript (学习)",
         value: "typescript",
-        repository: "liurongqing/pure-function",
+        repository: "liurongqing/typescript-template",
     },
     console: {
         key: "console",

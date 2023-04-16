@@ -6,11 +6,14 @@ import fs from "fs";
 
 import { create } from "./create";
 
+const packagePath = path.resolve(__dirname, "../package.json");
+
+const packageData = JSON.parse(fs.readFileSync(packagePath, "utf8"));
 const program = new Command();
 console.log(figlet.textSync("Mao Cli Manager"));
 
 program
-  .version("2.0.0")
+  .version(packageData.version)
   .description("Here are some templates for managing projects");
 // .option("-l, --ls [value]", "List directory contens")
 // .option("-m, --mkdir <value>", "Create a directory")

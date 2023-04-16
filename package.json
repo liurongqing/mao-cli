@@ -1,6 +1,6 @@
 {
   "name": "mao-cli",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "快速生成一些模板，可自行改造。",
   "main": "./dist/index.js",
   "bin": {

@@ -1,7 +1,7 @@
 {
   "name": "mao-cli",
-  "version": "2.0.1",
-  "description": "",
+  "version": "2.0.2",
+  "description": "快速生成一些模板，可自行改造。",
   "main": "./dist/index.js",
   "bin": {
     "mao": "./dist/index.js"
@@ -14,9 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/liurongqing/mao-cli.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["node cli", "cli"],
+  "author": "liurongqing",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/liurongqing/mao-cli/issues"
   },

@@ -1,7 +1,3 @@
-// import inquirer from "inquirer";
-// const inquirer = require("inquirer");
-// const inquirer = import("inquirer");
-// import inquirer = require("inquirer");
 import inquirer from "inquirer";
 
 import { loadRemoteAsset } from "./lib/download";

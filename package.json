@@ -1,13 +1,14 @@
 {
   "name": "mao-cli",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "./dist/index.js",
   "bin": {
     "mao": "./dist/index.js"
   },
   "scripts": {
-    "build": "npx tsc --watch"
+    "build": "tsc --watch",
+    "start": "node --watch dist/index.js"
   },
   "repository": {
     "type": "git",

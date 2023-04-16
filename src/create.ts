@@ -33,7 +33,7 @@ export const create = async (projectName: string) => {
             value: "custom",
           },
         ],
-        default: "custom",
+        default: "typescript",
       },
     ])
     .then(({ template }: { template: templateType }) => {

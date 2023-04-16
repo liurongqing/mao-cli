@@ -44,7 +44,7 @@ const create = (projectName) => __awaiter(void 0, void 0, void 0, function* () {
                     value: "custom",
                 },
             ],
-            default: "custom",
+            default: "typescript",
         },
     ])
         .then(({ template }) => {

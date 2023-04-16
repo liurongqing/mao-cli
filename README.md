@@ -1,3 +1,8 @@
+
+![node](https://img.shields.io/static/v1?label=node&message=v18.16.0&color=brightgreen)
+![license](https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen)
+---
+
 # 快速搭建项目
 
 快速下载项目，选择模板，可克隆后，根据公司需要，二次开发，定制，参考，学习。

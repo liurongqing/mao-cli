@@ -1,6 +1,6 @@
 {
   "name": "mao-cli",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "快速生成一些模板，可自行改造。",
   "main": "./dist/index.js",
   "bin": {
@@ -30,7 +30,6 @@
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "inquirer": "^8.2.5",
     "typescript": "^5.0.4"
   },
   "dependencies": {
@@ -38,6 +37,7 @@
     "commander": "^10.0.1",
     "download-git-repo": "^3.0.2",
     "figlet": "^1.6.0",
+    "inquirer": "^8.2.5",
     "ora": "^5.4.1"
   }
 }

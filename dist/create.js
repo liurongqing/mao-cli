@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.create = void 0;
 const inquirer_1 = __importDefault(require("inquirer"));
+const config_1 = require("./config");
 const download_1 = require("./lib/download");
 const create = (projectName) => __awaiter(void 0, void 0, void 0, function* () {
     inquirer_1.default
@@ -22,28 +23,11 @@ const create = (projectName) => __awaiter(void 0, void 0, void 0, function* () {
             type: "list",
             name: "template",
             message: "请选择模板",
-            choices: [
-                {
-                    key: "typescript",
-                    name: "typescript (学习)",
-                    value: "typescript",
-                },
-                {
-                    key: "console",
-                    name: "console    (中后台)",
-                    value: "console",
-                },
-                {
-                    key: "html5",
-                    name: "html5      (C端)",
-                    value: "html5",
-                },
-                {
-                    key: "custom",
-                    name: "custom     (自定义)",
-                    value: "custom",
-                },
-            ],
+            choices: Object.values(config_1.templates).map((v) => ({
+                key: v.key,
+                name: v.name,
+                value: v.value,
+            })),
             default: "typescript",
         },
     ])

@@ -1,5 +1,6 @@
 import inquirer from "inquirer";
 
+import { templates } from "./config";
 import { loadRemoteAsset } from "./lib/download";
 
 export type templateType = "typescript" | "console" | "html5" | "custom";
@@ -11,28 +12,11 @@ export const create = async (projectName: string) => {
         type: "list",
         name: "template",
         message: "请选择模板",
-        choices: [
-          {
-            key: "typescript",
-            name: "typescript (学习)",
-            value: "typescript",
-          },
-          {
-            key: "console",
-            name: "console    (中后台)",
-            value: "console",
-          },
-          {
-            key: "html5",
-            name: "html5      (C端)",
-            value: "html5",
-          },
-          {
-            key: "custom",
-            name: "custom     (自定义)",
-            value: "custom",
-          },
-        ],
+        choices: Object.values(templates).map((v) => ({
+          key: v.key,
+          name: v.name,
+          value: v.value,
+        })),
         default: "typescript",
       },
     ])

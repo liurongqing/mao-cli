@@ -5,6 +5,12 @@ export const templates = {
     value: "typescript",
     repository: "liurongqing/typescript-template",
   },
+  cocos: {
+    key: "cocos",
+    name: "cocos      (模板)",
+    value: "cocos",
+    repository: "liurongqing/mini-template",
+  },
   console: {
     key: "console",
     name: "console    (中后台)",
